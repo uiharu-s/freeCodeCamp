@@ -2,12 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="uiharu-s">
         <title>Survey Demo</title>
+        <meta name="description" content="">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <p style=" text-align: right; "><small><a href="#" onclick="getTest();">Load freeCodeCamp tests...</a></small></p>
         <h1 id="title">Survey Demo</h1>
         <p id="description">A demonstration of HTML5 form and input elements.</p>
         <form id="survey-form" action="#">
@@ -75,6 +78,12 @@
             </div>
             <input id="submit" type="submit" value="Submit">
         </form>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script>
+            function getTest() {
+                var s = document.createElement("script");
+                s.setAttribute("src", "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js");
+                document.head.appendChild(s);
+            }
+        </script>
     </body>
 </html>
