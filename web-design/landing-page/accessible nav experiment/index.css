@@ -1,0 +1,4 @@
+header > nav > span {
+    position: absolute;
+    left: 99999px;
+}

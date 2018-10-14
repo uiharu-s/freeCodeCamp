@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Demo</title>
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Demo</h1>
+        <p id="description">A demonstration of HTML5 form and input elements.</p>
+        <form id="survey-form" action="#">
+            <div>
+                <label for="name" id="name-label">Name: </label>
+                <input id="name"
+                    type="text" 
+                    required
+                    name="name" 
+                    placeholder="Please enter your name.">
+            </div>
+            <div>
+                <label for="email" id="email-label">Email: </label>
+                <input id="email" 
+                    type="email" 
+                    required
+                    name="email"
+                    placeholder="Please enter your email.">
+            </div>
+            <div>
+                <label for="number" id="number-label">Number: (+852)</label>
+                <input id="number" 
+                    type="number" 
+                    name="number" 
+                    min="20000000" 
+                    max="99999999"
+                    placeholder="Please enter your number.">
+            </div>
+            <div>
+                <label for="dropdown" name="dropdown">A dropdown: </label>
+                <select id="dropdown">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div>
+                <fieldset name="options">
+                    <legend>A group of radio buttons: </legend>
+                    <input id="option1" type="radio" name="options" value="1">
+                        <label for="option1">Option 1</label>
+                        <br>
+                    <input id="option2" type="radio" name="options" value="2">
+                        <label for="option2">Option 2</label>
+                        <br>
+                    <input id="option3" type="radio" name="options" value="3">
+                        <label for="option3">Option 3</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset name="checkboxes">
+                    <legend>A group of checkboxes: </legend>
+                    <input id="checkbox1" type="checkbox" name="checkboxes" value="1">
+                        <label for="checkbox1">Checkbox 1</label>
+                        <br>
+                    <input id="checkbox2" type="checkbox" name="checkboxes" value="2">
+                        <label for="checkbox2">Checkbox 2</label>
+                        <br>
+                    <input id="checkbox3" type="checkbox" name="checkboxes" value="3">
+                        <label for="checkbox3">Checkbox 3</label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="comments">Additional comments: </label>
+                <textarea name="comments" id="comments" placeholder="Please enter your comments."></textarea>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

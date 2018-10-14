@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+    body {background-color: white;}
+}
+header {
+    position: fixed;
+    top: 0;
+}
+nav {
+    display: flex;
+}
+nav > a {
+    display: block;
+}

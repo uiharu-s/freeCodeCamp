@@ -1,0 +1,114 @@
+/* a simple reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* @media specific variables */
+:root {
+    --main-width: 75vw;
+}
+
+@media (min-resolution: 100dpi), (max-width: 420px) {
+    :root {
+        --main-width: 80vw;
+    }
+}
+
+
+/* text style */
+/* general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+h1, h2, h3, h4, p, li {
+    line-height: 1.5em;
+    padding: 0.3em 0;
+    list-style: none;
+}
+
+/* titles */
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+/* hyperlinks */
+a:link {
+    text-decoration: none;
+    color: #07C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #005999;
+}
+
+
+/* article area */
+#main {
+    width: var(--main-width);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2% 5%;
+}
+
+
+/* image insert */
+/* "breaches" parent #main to center self */
+#img-div, #img-div p {
+    position: relative;
+    left: calc(50% - 50vw);
+}
+
+#img-div {
+    width: 100vw;
+    padding: 2% 0;
+    margin: 1% 0;
+    background-color: #efefef;
+}
+
+img, #img-div p {
+    width: var(--main-width);
+    max-width: 1000px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#img-div p {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img-credit {
+    margin-left: auto;
+    justify-content: flex-end;
+}
