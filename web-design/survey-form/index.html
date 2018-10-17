@@ -14,25 +14,24 @@
         <h1 id="title">Join Anime Club!</h1>
         <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. Your inputs stay in your browser and will not be actually submitted.</p>
         <form id="survey-form" action="javascript:submit();">
-            <fieldset>
-                <!-- <legend>What's your name?</legend> -->
-                <label for="name" id="name-label">Name </label>
+            <div class="Field">
+                <label for="name" id="name-label" class="description">Name </label>
                 <input id="name"
-                    type="text" 
+                    type="text"
                     required
                     name="name" 
-                    placeholder="Your name please~">
-            </fieldset>
-            <fieldset>
-                <label for="email" id="email-label">Email </label>
-                <input id="email" 
-                    type="email" 
+                    placeholder="Please enter your name.">
+            </div>
+            <div class="Field">
+                <label for="email" id="email-label" class="description">Email </label>
+                <input id="email"
+                    type="email"
                     required
                     name="email"
                     placeholder="Please enter your email.">
-            </fieldset>
-            <fieldset>
-                <label for="mobile">Mobile </label>
+            </div>
+            <fieldset class="Field">
+                <legend class="description">Mobile</legend>
                 <select name="countryCode" id="countryCode" aria-label="Country code">
                     <option value="213">Algeria (+213)</option>
                     <option value="376">Andorra (+376)</option>
@@ -249,30 +248,30 @@
                     <option value="260">Zambia (+260)</option>
                     <option value="263">Zimbabwe (+263)</option>
                 </select>
-                <input id="mobile" 
+                <input id="mobile"
                     type="tel" 
-                    name="mobile" 
+                    name="mobile"
                     pattern="[0-9]{8,14}"
                     placeholder="Please enter your number.">
                     <!-- max 14 digits for 1 digit country code -->
             </fieldset>
-            <fieldset>
-                    <label for="age" id="number-label">Age </label>
+            <div class="Field">
+                    <label for="age" id="number-label" class="description">Age </label>
                     <input name="age" id="number" 
                     type="number"
                     min="0"
                     max="200"
                     placeholder="Please enter your age.">
-            </fieldset>
-            <fieldset>
-                <label for="dropdown" name="dropdown">A dropdown: </label>
+            </div>
+            <div class="Field">
+                <label for="dropdown" name="dropdown" class="description">A dropdown: </label>
                 <select id="dropdown">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
-            </fieldset>
-            <fieldset name="options">
-                <legend>A group of radio buttons: </legend>
+            </div>
+            <fieldset name="options" class="Field">
+                <legend class="description">A group of radio buttons: </legend>
                 <input id="option1" type="radio" name="options" value="1">
                     <label for="option1">Option 1</label>
                     <br>
@@ -282,8 +281,8 @@
                 <input id="option3" type="radio" name="options" value="3">
                     <label for="option3">Option 3</label>
             </fieldset>
-            <fieldset name="checkboxes">
-                <legend>A group of checkboxes: </legend>
+            <fieldset name="checkboxes" class="Field">
+                <legend class="description">A group of checkboxes: </legend>
                 <input id="checkbox1" type="checkbox" name="checkboxes" value="1">
                     <label for="checkbox1">Checkbox 1</label>
                     <br>
@@ -293,10 +292,10 @@
                 <input id="checkbox3" type="checkbox" name="checkboxes" value="3">
                     <label for="checkbox3">Checkbox 3</label>
             </fieldset>
-            <fieldset>
-                <label for="comments">Additional comments: </label>
+            <div class="Field">
+                <label for="comments" class="description">Additional comments: </label>
                 <textarea name="comments" id="comments" placeholder="Please enter your comments."></textarea>
-            </fieldset>
+            </div>
             <input id="submit" type="submit" value="Submit">
         </form>
         <script>
