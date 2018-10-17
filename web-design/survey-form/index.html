@@ -15,6 +15,7 @@
         <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. Your inputs stay in your browser and will not be actually submitted.</p>
         <form id="survey-form" action="javascript:submit();">
             <fieldset>
+                <!-- <legend>What's your name?</legend> -->
                 <label for="name" id="name-label">Name </label>
                 <input id="name"
                     type="text" 
@@ -31,8 +32,8 @@
                     placeholder="Please enter your email.">
             </fieldset>
             <fieldset>
-                <label for="number" id="number-label">Number </label>
-                <select name="countryCode" id="countryCodes">
+                <label for="mobile">Mobile </label>
+                <select name="countryCode" id="countryCode" aria-label="Country code">
                     <option value="213">Algeria (+213)</option>
                     <option value="376">Andorra (+376)</option>
                     <option value="244">Angola (+244)</option>
@@ -248,12 +249,20 @@
                     <option value="260">Zambia (+260)</option>
                     <option value="263">Zimbabwe (+263)</option>
                 </select>
-                <input id="number" 
-                    type="number" 
-                    name="number" 
-                    min="20000000" 
-                    max="99999999"
+                <input id="mobile" 
+                    type="tel" 
+                    name="mobile" 
+                    pattern="[0-9]{8,14}"
                     placeholder="Please enter your number.">
+                    <!-- max 14 digits for 1 digit country code -->
+            </fieldset>
+            <fieldset>
+                    <label for="age" id="number-label">Age </label>
+                    <input name="age" id="number" 
+                    type="number"
+                    min="0"
+                    max="200"
+                    placeholder="Please enter your age.">
             </fieldset>
             <fieldset>
                 <label for="dropdown" name="dropdown">A dropdown: </label>

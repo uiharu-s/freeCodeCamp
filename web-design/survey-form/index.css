@@ -29,6 +29,6 @@ form {
     padding: 2%;
 }
 
-input {
-    display: block;
+fieldset {
+    border: 0;
 }
