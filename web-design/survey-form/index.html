@@ -12,8 +12,8 @@
     <body>
         <p style=" text-align: right; "><small><a href="#" onclick="getTest();">Load freeCodeCamp tests...</a></small></p>
         <h1 id="title">Join Anime Club!</h1>
-        <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. I do not record your inputs. <i>However, github servers may read and store your inputs if you click Submit. To avoid, your may clone the project and open this page locally.</i></p>
-        <form id="survey-form" action="./submit.html">
+        <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. Your inputs stay in your browser and will not be actually submitted.</p>
+        <form id="survey-form" action="javascript:submit();">
             <fieldset>
                 <label for="name" id="name-label">Name </label>
                 <input id="name"
@@ -292,9 +292,14 @@
         </form>
         <script>
             function getTest() {
-                var s = document.createElement("script");
+                let s = document.createElement("script");
                 s.setAttribute("src", "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js");
                 document.head.appendChild(s);
+            }
+            function submit() {
+                let s = document.open("text/html", "replace");
+                s.write("Submitted :D");
+                s.close();
             }
         </script>
     </body>
