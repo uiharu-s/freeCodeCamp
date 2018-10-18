@@ -1,0 +1,10 @@
+/* @media specific variables */
+:root {
+    background: azure;
+}
+
+@media (min-resolution: 100dpi), (max-width: 420px) {
+    :root {
+        background: aqua;
+    }
+}
