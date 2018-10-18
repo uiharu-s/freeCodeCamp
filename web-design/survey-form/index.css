@@ -37,6 +37,18 @@ h1 {
 }
 
 /* hyperlinks */
+a:link {
+    text-decoration: none;
+    color: #07C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #005999;
+}
 
 /* form */
 form {
@@ -54,6 +66,13 @@ label.description {
 }
 
 input:not([type=submit]) {
-    border: 1px solid;
+    border: 0;
+    box-shadow: 0 1.5px black;
+    width: 25vw;
+    height: 30px;
     /* font-size: 18px; */
+}
+
+input[type=submit] {
+    width: 20vw;
 }

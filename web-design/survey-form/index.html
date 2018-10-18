@@ -12,7 +12,7 @@
     <body>
         <p style=" text-align: right; "><small><a href="#" onclick="getTest();">Load freeCodeCamp tests...</a></small></p>
         <h1 id="title">Join Anime Club!</h1>
-        <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. Your inputs stay in your browser and will not be actually submitted.</p>
+        <p id="description">Please fill in this application form to join my non-existant anime, manga and games club! This is a demonstration of HTML5 form and input elements. Your inputs stay in your browser and will not be uploaded anywhere.</p>
         <form id="survey-form" action="javascript:submit();">
             <div class="Field">
                 <label for="name" id="name-label" class="description">Name </label>
@@ -32,7 +32,7 @@
             </div>
             <fieldset class="Field">
                 <legend class="description">Mobile</legend>
-                <select name="countryCode" id="countryCode" aria-label="Country code">
+                <select name="countryCode" id="dropdown" aria-label="Country code">
                     <option value="213">Algeria (+213)</option>
                     <option value="376">Andorra (+376)</option>
                     <option value="244">Angola (+244)</option>
@@ -263,13 +263,13 @@
                     max="200"
                     placeholder="Please enter your age.">
             </div>
-            <div class="Field">
+            <!-- <div class="Field">
                 <label for="dropdown" name="dropdown" class="description">A dropdown: </label>
                 <select id="dropdown">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
-            </div>
+            </div> -->
             <fieldset name="options" class="Field">
                 <legend class="description">A group of radio buttons: </legend>
                 <input id="option1" type="radio" name="options" value="1">
