@@ -1,0 +1,21 @@
+/* @media specific variables */
+:root {
+    background: white;
+}
+
+@media (min-resolution: 100dpi), (max-width: 420px) {
+    :root {
+        background: aqua;
+    }
+}
+
+#welcome-section {
+    display: block;
+    height: 100vh;
+}
+
+#navbar {
+    display: block;
+    position: sticky;
+    top: 0;
+}
