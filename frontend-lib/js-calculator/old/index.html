@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>basic calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+        <div class="buffer"></div>
+        <div class="numbers">
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+            <button class="number" id="0">0</button>
+            <button class="number dot" id=".">.</button>
+        </div>
+        <div class="operators">
+            <button class="operator" id="divide">÷</button>
+            <button class="operator" id="times">x</button>
+            <button class="operator" id="minus">-</button>
+            <button class="operator" id="plus">+</button>
+        </div>
+        <button class="clear">clear</button>
+        <button class="operator" id="equal">=</button>
+    </div>
+    <p><em>You may use the keyboard.</em></p>
+    <p> Limitations: glitches in firefox, tested in chrome; floating point errors</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

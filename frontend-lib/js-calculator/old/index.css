@@ -1,0 +1,64 @@
+.box {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    width: 600px;
+    height: 400px;
+  }
+  
+  .buffer {
+    grid-column: 1 / 6;
+    background: #5577FF;
+    font-family: monospace;
+    font-size: 68px;
+    color: #FFFCC7;
+    text-align: right;
+  }
+  
+  
+  button {
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #ccc;
+  /*   border-collapse: collapse; */
+    font-size: 2em;
+  }
+  
+  .numbers {
+    grid-area: 2/1/6/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .number {
+    background: #FFFCC7;
+    color: #5577FF;
+  }
+  
+  .number.dot {
+    grid-column-end: span 2;
+  }
+  
+  .operators {
+    grid-row: 2/6;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .operator {
+    background: #E8C48F;
+    color: #5577FF;
+  }
+  
+  .clear {
+    background: #FF6D60;
+    color: #FFFCC7;
+  }
+  
+  #equal {
+    grid-row-end: span 3;
+    vertical-align: middle;
+    background: #C766E8;
+    color: #FFFCC7;
+  }
+  

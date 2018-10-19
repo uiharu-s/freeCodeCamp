@@ -1,0 +1,13 @@
+.row {
+    min-height: 100vh;
+  }
+  
+  p {
+    position: fixed;
+    bottom: 5px;
+    width: 100vw;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
