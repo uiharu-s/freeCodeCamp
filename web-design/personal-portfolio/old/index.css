@@ -1,0 +1,72 @@
+body {
+    position: relative;
+  }
+  
+  #cat {
+    margin-top: 72px
+  }
+  
+  h1 {
+  /*   margin-top: cal((100vh - 300px) / 2); */
+    margin-top: 48px;
+  }
+  
+  h3 {
+    line-height: 1.5;
+  }
+  
+  h4 {
+    margin-top: 16px;
+    line-height: 1.6;
+  }
+  
+  .language {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9999;
+  }
+  
+  .jumbotron {
+    margin-top: 54px;
+    min-height: calc(100vh - 54px);
+    background-image: url("https://s24.postimg.org/aks5x3v05/korabli-ili-oblaka_6512bd43d9caa6e02c990b0a82652.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-position: right;
+    background-attachment: fixed;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 1px #222;
+  }
+  
+  .image-shadow {
+    border: 5px solid white;
+    box-shadow: 0 0 30px 3px #222;
+  }
+  
+  .img-thumbnail {
+    margin: 6px 2px;
+  }
+  
+  #contact {
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  /* https://stackoverflow.com/a/23735091 */
+  .btn-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    padding: 0;
+    margin: 8px;
+    border-radius: 50%;
+  }
+  
+  .top-buffer {
+    margin-top: 10px;
+  }
