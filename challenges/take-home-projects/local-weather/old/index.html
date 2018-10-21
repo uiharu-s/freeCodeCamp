@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <meta name="description" content="">
+</head>
+<body>
+    <input type="text" placeholder="Please enter a city for its weather" id="query" />
+    <button id="send">How's the weather?</button>
+    <button id="geo-send">How's weather at my location?</button>
+    <select id="celsius">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+    </select>
+
+    <p>Limitations:</p>
+    <ol>
+    <li>Please access this page through (insecure) http; https unsupported.</li>
+    <li>Your ad-blocker may block location queries (to ipinfo.io).</li>
+    </ol>
+    <div id="data"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
